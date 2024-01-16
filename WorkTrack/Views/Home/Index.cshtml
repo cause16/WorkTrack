@@ -1,0 +1,20 @@
+﻿@model WorkTrack.ViewModels.CompanyInfoViewModel
+@{
+    ViewBag.Title = "Головна сторінка";
+}
+
+<div class="company-info">
+    <h3>Інформація про компанію</h3>
+    <div>
+        <p>Назва: @Model.CompanyName</p>
+    </div>
+    <div>
+        <p>Номер телефону: @Model.PhoneNumber</p>
+    </div>
+    <div>
+        <p>Адреса: @Model.Address.Country, м. @Model.Address.City, вулиця @Model.Address.Street @Model.Address.HouseNumber, кв. @Model.Address.ApartmentNumber</p>
+    </div>
+    <div>
+        <p>Поштовий індекс: @Model.Address.PostIndex</p>
+    </div>
+</div>
